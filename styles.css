@@ -1,26 +1,42 @@
 * {
-  margin: 0;
+  margin: 10px;
   padding: 0;
   box-sizing: border-box;
 }
+body,
+html {
+  margin: 0;
+}
 body {
   background-color: rgb(240, 231, 250);
+  max-width: 100%;
 }
 .box {
   border: 3px solid red;
-  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
 }
 .box > a {
   border: 1px solid blue;
-  position: relative;
-  padding: 20px;
+  padding: 2px;
+  transition: all 1s linear;
 }
 img {
   width: 100px;
   height: 100px;
   object-fit: cover;
+}
+button {
+  background-color: transparent;
+  border: 3px solid green;
+  color: green;
+  padding: 5px;
+  font-size: 21px;
+}
+#btn__box {
+  border: 3px solid pink;
+  display: flex;
+  justify-content: space-around;
 }
